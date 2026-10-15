@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url("image/bg.png");
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 80%;
+    max-width: 1000px;
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    background: rgb(225, 225, 225, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+
+h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#input {
+    width: 100%;
+    background: rgb(255, 255, 255, 0.1);
+    border: 0;
+    outline: 0;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    flex: 1;
+    min-width: 0;
+
+
+}
+
+#input ::placeholder {
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+#add-minus-btn {
+    background: rgb(225, 225, 225, 0.1);
+    border: 0;
+    outline: 0;
+    width: 44px;
+    height: 43px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255, 0.6);
+}
+
+#task-container {
+    width: 100%;
+}
+
+#task-container li {
+    width: 100%;
+    background: rgb(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+
+}
+
+#task-container button {
+    background: rgb(255, 255, 255, 0.3);
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    padding: 2px;
+    color: red;
+
+}
+
+
+#task-container:has(ul:empty) {
+    display: none;
+}
